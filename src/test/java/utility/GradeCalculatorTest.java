@@ -18,6 +18,8 @@ public class GradeCalculatorTest {
         assertThat(gc.calculate(65,1),is('C'));
         assertThat(gc.calculate(0,7,32,5),is('F'));
 
-
+       assertThat(grade.calculate(80,35,5),is('x'));
+        assertThat(grade.calculate(81),is('B'));
+        assertThat(grade.calculate(-5),is('U'));
     }
 }
