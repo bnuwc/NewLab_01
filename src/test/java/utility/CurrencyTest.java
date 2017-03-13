@@ -18,6 +18,6 @@ public class CurrencyTest {
         assertThat(currency.exchange("USD",2.0,"USD"),closeTo(2.0,0.001));
 
         assertThat(currency.exchange("THB",5.0,"EUR"),closeTo(3.5,0.001));
-
+assertThat(currency.exchange("AAAAAAAAA",1.0,"USD"),closeTo(1.0,0.001));
     }
 }
