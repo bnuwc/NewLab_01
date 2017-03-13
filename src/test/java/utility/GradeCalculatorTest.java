@@ -22,6 +22,8 @@ public class GradeCalculatorTest {
         assertThat(grade.calculate(40, 26),is('C'));
         assertThat(grade.calculate(20,12,6),is('F'));
 
-
+       assertThat(grade.calculate(80,35,5),is('x'));
+        assertThat(grade.calculate(81),is('B'));
+        assertThat(grade.calculate(-5),is('U'));
     }
 }
