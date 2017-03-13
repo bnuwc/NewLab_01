@@ -5,7 +5,7 @@ package utility;
  */
 public class Currency {
     String[] currency = {"USD","EUR","THB"};
-
+	//Add exchange method
     public double exchange (String sourceCurrency, double amount, String targetCurrency){
 
         OUTER:
