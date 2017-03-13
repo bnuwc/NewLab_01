@@ -16,8 +16,7 @@ public class GradeCalculator {
             if (sum > 80) return 'B';
             if (sum > 60) return 'C';
             return 'F';
-        }else if(sum < 0) return 'U';
+        }else if(sum < 0) return 'U';//return U when less 0
         return 'x';
-
     }
 }
