@@ -42,7 +42,7 @@ public class Currency {
             return amount;
         }else{
             amount = amount * 1.01;
-            return amount;
+            return amount;}}
 
     private double targetIsUSD (String sourceCurrency, double amount, String targetCurrency){
         if(sourceCurrency=="THB"){
