@@ -17,6 +17,10 @@ public class GradeCalculatorTest {
         assertThat(gc.calculate(25,28,32),is('B'));
         assertThat(gc.calculate(65,1),is('C'));
         assertThat(gc.calculate(0,7,32,5),is('F'));
+  assertThat(grade.calculate(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),is('C'));
+        assertThat(grade.calculate(25,28,32),is('B'));
+        assertThat(grade.calculate(40, 26),is('C'));
+        assertThat(grade.calculate(20,12,6),is('F'));
 
 
     }
