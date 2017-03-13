@@ -13,11 +13,14 @@ public class CurrencyTest {
     @Test
         public void testExchange(){
         Currency currency = new Currency();
-        assertThat(currency.exchange("USD",1.0,"USD"),closeTo(1.0,0.001));
+//        assertThat(currency.exchange("USD",1.0,"USD"),closeTo(1.0,0.001));
+//
+//        assertThat(currency.exchange("USD",2.0,"USD"),closeTo(2.0,0.001));
+//
+//        assertThat(currency.exchange("THB",5.0,"EUR"),closeTo(3.5,0.001));
 
-        assertThat(currency.exchange("USD",2.0,"USD"),closeTo(2.0,0.001));
+        assertThat(currency.exchange("wfsdf",9.0,"EUR"),is(Double.NaN));
 
-        assertThat(currency.exchange("THB",5.0,"EUR"),closeTo(3.5,0.001));
-
+        assertThat(currency.exchange("USD",9.0,"asdfdf"),is(Double.NaN));
     }
 }
